@@ -1,0 +1,36 @@
+.navbar logo {
+  background-color: red; /* Bold blackish color */
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.5em;
+  margin-right: 20px;
+  color:rgb(210, 58, 58); /* Whitish royal color */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,6 @@
+.dashboard-container {
+  background-color: #f5f5f5; /* Use your preferred color */
+  padding: 20px;
+  border-radius: 0 30px 0 0; /* Curved top-right corner */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}

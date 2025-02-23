@@ -1,18 +1,27 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./pages/dashboard.jsx";
-import Login from "./pages/login.jsx";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/dashboard";
+import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
+import AddExpense from "./pages/AddExpense";
+import MainLayout from "./components/MainLayout";
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Redirect the root path ("/") to "/login" */}
-        <Route path="/" element={<Navigate to="/login" />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/dashboard" element={<MainLayout />}>
+                    <Route index element={<Dashboard />} />
+                    <Route path="reports" element={<Reports />} />
+                    <Route path="settings" element={<Settings />} />
+                    <Route path="add-expense" element={<AddExpense />} />
+                </Route>
+            </Routes>
+        </Router>
+    );
 }
+
 
 export default App;
