@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Dashboard from "./pages/dashboard";
-import Reports from "./pages/Reports";
-import Settings from "./pages/Settings";
-import AddExpense from "./pages/AddExpense";
+import Login from "./Pages/Login";
+import Dashboard from "./Pages/dashboard";
+import Reports from "./Pages/Reports";
+import Settings from "./Pages/Settings";
+import AddExpense from "./Pages/AddExpense";
 import MainLayout from "./components/MainLayout";
 
 function App() {
