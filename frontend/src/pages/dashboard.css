@@ -1,6 +1,90 @@
-.dashboard-container {
-  background-color: #f5f5f5; /* Use your preferred color */
+.dashboard {
   padding: 20px;
-  border-radius: 0 30px 0 0; /* Curved top-right corner */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.total-expenses h3 {
+  color: #dc3545;
+}
+
+.recent-expenses h3 {
+  color: #28a745;
+}
+
+.expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expense-amount {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.expense-category {
+  color: #555;
+  margin-left: 5px;
+}
+
+.expense-date {
+  color: #888;
+  font-size: 12px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+.no-expense {
+  color: #888;
 }

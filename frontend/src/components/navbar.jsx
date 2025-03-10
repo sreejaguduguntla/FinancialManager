@@ -1,15 +1,32 @@
-import { Link } from "react-router-dom";
-import "./Navbar.css"; // If you have styles
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h2 className="logo">Expense Manager</h2>
-      <ul>
-        <li><Link to="/dashboard">Dashboard</Link></li>
-        <li><Link to="/dashboard/reports">Reports</Link></li>
-        <li><Link to="/dashboard/settings">Settings</Link></li>
-        <li><Link to="/dashboard/add-expense">Add Expense</Link></li>
+      <h2 className="logo">Finance Manager</h2>
+      <ul className="nav-links">
+        <li>
+          <NavLink to="/dashboard" className={({ isActive }) => (isActive ? "active-link" : "")}>
+            Dashboard
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/dashboard/reports" className={({ isActive }) => (isActive ? "active-link" : "")}>
+            Reports
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/dashboard/add-expense" className={({ isActive }) => (isActive ? "active-link" : "")}>
+            Add Expense
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/dashboard/settings" className={({ isActive }) => (isActive ? "active-link" : "")}>
+            Settings
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

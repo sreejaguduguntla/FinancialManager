@@ -1,0 +1,46 @@
+.settings {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.setting-item {
+  margin: 15px 0;
+}
+
+.setting-item label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+select, input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.toggle-btn, .reset-btn {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.toggle-btn:hover, .reset-btn:hover {
+  background: #d84315;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #222;
+  color: white;
+}
